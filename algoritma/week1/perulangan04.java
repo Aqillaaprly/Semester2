@@ -4,10 +4,10 @@ public class perulangan04 {
     public static void main(String[] args) {
         int n = 0;
         String nim;
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Masukkan NIM Anda: ");
-        nim = input.nextLine();
+        nim = sc.nextLine();
 
         if (nim.length() >= 2) {
             String lastTwo = nim.substring(nim.length() - 2);
