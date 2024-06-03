@@ -1,3 +1,3 @@
-#2nd Semester
+# 2nd Semester
 
 Second semester is here 
