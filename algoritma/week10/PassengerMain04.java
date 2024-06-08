@@ -7,6 +7,7 @@ public class PassengerMain04 {
         System.out.println("2. Dequeue");
         System.out.println("3. Check first queue");
         System.out.println("4. Check all queue");
+        System.out.println("5. peak Rear");
         System.out.println("=======================");
     }
 
@@ -52,6 +53,9 @@ public class PassengerMain04 {
                     break;
                 case 4:
                     queuePassenger.print();
+                    break;
+                case 5:
+                    queuePassenger.peekRear();
                     break;
             }
 

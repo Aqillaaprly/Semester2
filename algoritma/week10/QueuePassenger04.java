@@ -105,7 +105,7 @@ public class QueuePassenger04 {
         return data;
     }
 
-   /**  public void peekRear() {
+     public void peekRear() {
         if (!IsEmpty()) {
             System.out.println("The last element : " + Q[rear].name + " "
             + Q[rear].cityOrigin + " " + Q[rear].cityDestination + " " +
@@ -113,5 +113,5 @@ public class QueuePassenger04 {
         } else {
             System.out.println("Queue is still empty");
         }
-    }    /** */
+    }    
 }
