@@ -71,7 +71,26 @@ public class SingleLinkedList04 {
         }
     }
 
-
+    public void insertBefore(int key, int input) {
+        if (isEmpty()) {
+            System.out.println("Linked list is empty");
+            return;
+        }
+        if (head.data == key) {
+            addFirst(input);
+            return;
+        }
+        Node04 temp = head;
+        while (temp.next != null && temp.next.data != key) {
+            temp = temp.next;
+        }
+        if (temp.next != null) {
+            Node04 ndInput = new Node04(input, temp.next);
+            temp.next = ndInput;
+        } else {
+            System.out.println("Key not found");
+        }
+    }
 
 
     public int getData(int index) {
