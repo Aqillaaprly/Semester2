@@ -78,6 +78,9 @@ public class Graph {
         graph.addEdge(3, 0);
         graph.printGraph();
         graph.degree(2);
+
+        graph.removeEdge(1, 2);
+        graph.printGraph();
     }
 
    
