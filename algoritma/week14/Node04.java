@@ -1,5 +1,3 @@
-import org.w3c.dom.Node;
-
 public class Node04{
     int data;
     Node04 left;
