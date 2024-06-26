@@ -5,6 +5,10 @@ public class BinaryTreeArrayMain {
         int idxLast = 6;
         bta.pupulateData(data, idxLast);
         bta.traverseInOrder(0);
+
+        bta.traversePostOrder(0);
+        System.out.println("");
+        bta.traversePreOrder(0);
     }
     
 }
