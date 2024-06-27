@@ -4,24 +4,28 @@ import java.util.List;
 
 public class ContohList {
     public static void main(String[] args) {
-        // ArrayList example
-        List<Object> l = new ArrayList<>();
+        // Menggunakan ArrayList dengan tipe spesifik Integer
+        List<Integer> l = new ArrayList<>();
         l.add(1);
         l.add(2);
         l.add(3);
-        l.add("Cireng");
 
-        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %s\n", 
+
+        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %d\n", 
                           l.get(0), l.size(), l.get(l.size() - 1));
 
         l.add(4);
         l.remove(0);
 
-        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %s\n", 
+        System.out.printf("Elemen 0: %d total elemen: %d elemen terakhir: %d\n", 
                           l.get(0), l.size(), l.get(l.size() - 1));
 
-        // LinkedList example
-        List<String> names = new LinkedList<>();
+        LinkedList<String> names = new LinkedList<>();
+        names.push("Mei-mei");
+        System.out.printf("Elemen 0: %s total elemen: %s elemen terakhir: %s\n",
+        names.getFirst(), names.size(), names.getLast());
+        System.out.println("Names: " + names.toString());
+
         names.add("Noureen");
         names.add("Akhleema");
         names.add("Shanum");
